@@ -1,3 +1,5 @@
+// Hide Schedule has been updated.
+
 // Store CSS details in variable
 var pastTime = document.querySelector(".past")
 var presentTime = document.querySelector(".present")
@@ -82,52 +84,66 @@ hour9Btn.addEventListener("click", am9Func);
 function am9Func() {
   const value = hour9.value;
   localStorage.setItem("9-hour", value);
+  updated()
 }
 
 hour10Btn.addEventListener("click", am10Func);
 function am10Func() {
   const value = hour10.value;
   localStorage.setItem("10-hour", value);
+  updated()
 }
 
 hour11Btn.addEventListener("click", am11Func);
 function am11Func() {
   const value = hour11.value;
   localStorage.setItem("11-hour", value);
+  updated()
 }
 
 hour12Btn.addEventListener("click", pm12Func);
 function pm12Func() {
   const value = hour12.value;
   localStorage.setItem("12-hour", value);
+  updated()
 }
 
 hour13Btn.addEventListener("click", pm13Func);
 function pm13Func() {
   const value = hour13.value;
   localStorage.setItem("13-hour", value);
+  updated()
 }
 
 hour14Btn.addEventListener("click", pm14Func);
 function pm14Func() {
   const value = hour14.value;
   localStorage.setItem("14-hour", value);
+  updated()
 }
 
 hour15Btn.addEventListener("click", pm15Func);
 function pm15Func() {
   const value = hour15.value;
   localStorage.setItem("15-hour", value);
+  updated()
 }
 
 hour16Btn.addEventListener("click", pm16Func);
 function pm16Func() {
   const value = hour16.value;
   localStorage.setItem("16-hour", value);
+  updated()
 }
 
 hour17Btn.addEventListener("click", pm17Func);
 function pm17Func() {
   const value = hour17.value;
   localStorage.setItem("17-hour", value);
+  updated()
+}
+
+function updated(){
+$("#updated").text("Schedule has been updated! 	✓").delay(5000).fadeOut('slow')
+return
 }
